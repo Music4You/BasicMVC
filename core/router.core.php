@@ -43,7 +43,7 @@ class Router {
 		self::$urlControllerMethod = (!isset($url)) ? "index" : $url[1];			
 		self::$urlControllerArgs = (!isset($url)) ? "index" : (isset($url[2]) ? $url[2] : NULL);	
 		
-		self::validateRoute();+
+		self::validateRoute();
 		
 		var_dump(self::getUrlParam("test"));
 	}
