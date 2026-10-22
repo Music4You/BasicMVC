@@ -1,0 +1,27 @@
+
+
+	<!-- Begin page content -->
+	<main role="main" class="container">
+		<h1 class="mt-5"><b>Controller:</b> Home - <b>Method:</b> testdata</h1>
+		tblTest
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">ID</th>
+					<th scope="col">Data</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php
+				foreach(self::$dataView["sqlData"] as $dobj) {?>
+					<tr class="align-middle">
+						<td><?= $dobj->id; ?></td>
+						<td><?= $dobj->data; ?></td>							 
+					</tr>
+				<?php
+				}
+				?>
+			</tbody>
+		</table>
+	</main>
